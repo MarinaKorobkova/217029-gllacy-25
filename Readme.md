@@ -1,7 +1,8 @@
 # Личный проект «Глейси»
 
 * Студент: [Marina Korobkova](https://up.htmlacademy.ru/htmlcss/25/user/217029).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктория Коваленко`https://htmlacademy.ru/profile/id42638
+.
 
 ---
 
