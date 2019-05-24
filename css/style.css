@@ -1,0 +1,436 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  color: ##ffffff;
+  letter-spacing: normal;
+  text-transform: none;
+  width: 1200px;
+  height: 2416px;
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #f26843;
+}
+
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: none;
+  background-color: #e74a35;
+  border: none;
+  border-radius: 15px;
+  /*как посмотреть border-radius в зеплине?*/
+}
+.button-white {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: none;
+  border: none;
+  border-radius: 25px;
+  background-color:#ffffff;
+  opacity: 0.2;
+  color: #ffffff;
+}
+
+/*основная навигация*/
+.site-navigation,
+.user-navigation {
+  font: inferit;
+  list-style: none;
+  color: #ffffff;
+}
+
+.site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  text-decoration:underline;
+}
+
+.login-link li{
+  font: inherit;
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.seach-button.button-white{
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+
+}
+.login-button.button-white{
+  width: 93px;
+  height: 32px;
+}
+.basket-button.button-white{
+  width: 100px;
+  height: 33px;
+}
+
+.seach img{
+  width: 17px;
+  height: 17px;
+  position: absolute;
+}
+.entrance img{
+  width: 21px;
+  height: 19px;
+  position: absolute;
+}
+.basket img{
+  width: 21px;
+  height: 20px;
+  position: absolute;
+}
+/*не могу понять, как сделать, чтобы картинки и текст на кнопках было видно и как их подвигать*/
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation{
+  line-height: 18px;
+}
+
+.user-navigation{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+  .working-time{
+    font: inherit;
+  }
+
+.working-time p{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+}
+
+.working-time a{
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  /*почему-то свойства не срабатывают*/
+}
+
+
+/*давайте оба*/
+.gallery h3{
+  font-family: inherit;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 60px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;;
+}
+.promotion div{
+  background-image: url(img/2-icecream-promo.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  /*до меня не доходит,как вставить картинку((()))
+  Получается как-то в слайдер надо, я не понимаю*/
+}
+/*как посмотреть радиус скругления кнопки в зеплине?*/
+.gallery button{
+    width: 280px;
+    height: 64px;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 44px;
+    box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+    background-image: linear-gradient(to top, #e74a35, #f26843);
+    text-decoration: none;
+}
+
+
+
+/*специальное предложение*/
+.raspberry div{
+  background-image: url(img/rasperry.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.chocolate div{
+  background-image: url(img/chocolate.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+/*фотки не могу вставить*/
+
+.special-offers h3{
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.special-offers p{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  /*почему-то цвет шрифта не меняется*/
+}
+.raspberry button{
+  width: 165px;
+  height: 46px;
+  font-weight: normal;
+  line-height: 44px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  text-decoration: none;
+  opacity: 0.99;
+}
+
+.chocolate button{
+  width: 189px;
+  height: 45px;
+  font-weight: normal;
+  line-height: 44px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  text-decoration: none;
+  opacity: 0.99;
+}
+/*хиты*/
+
+
+}
+.hit-items li{
+  list-style:none;
+}
+
+.hit-items h3{
+  list-style: none;
+  font: inherit;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  /*тоже почему-то цвет не меняется*/
+}
+
+ .hit-items p{
+   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+ }
+
+}
+
+/*преимущества*/
+.features-item li{
+  list-style:none;
+}
+
+.features section{
+  background-image: url("img/background.png");
+  width: 1146px;
+  height: 306px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.features-names h2{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+.features-explanation p{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+
+/*новое в нашем блоге статья*/
+article{
+  background-image:(img/icream-strawberry.jpg)
+  width: 560px;
+ height: 220px;
+ background-color: #8996a6;
+}
+.article h2{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+.article a{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+/*форма подписки*/
+/*как сделать подложку не знаю*/
+.subscriptin{
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5a5a;
+}
+.subscriction.button{
+  width: 129px;
+  height: 44px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fefefe;
+}
+
+/*карта и адрес*/
+.description p{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+.address p{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+.phone-number-address a{
+
+}
+.backfeed button{
+  width: 252px;
+  height: 44px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fefefe;
+}
+
+
+
+/*футер*/
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  
+}
