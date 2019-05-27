@@ -11,18 +11,11 @@ body {
   letter-spacing: normal;
   text-transform: none;
   width: 1200px;
-  height: 2416px;
   background-color: #849d8f;
 }
 
 a {
   text-decoration: none;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: #f26843;
 }
 
 .visually-hidden {
@@ -32,9 +25,14 @@ a {
   height: 1px;
   margin: -1px;
 }
+/*пока выключаю всплывающие формы*/
+.catalog-list,
+.seach-form,
+.login-form{
+  display:none;
+}
 
-.button,
-.button a {
+.button {
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -44,17 +42,35 @@ a {
   border: none;
   border-radius: 15px;
 }
-/*после того, как переделала кнопки на ссылки, не могу настроить размеры, чтобы выглядело правильно*/
-.button-white {
+.button:hover {
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.2),
+                     rgba(255, 255, 255, 0.2));
+}
+.button:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.07),
+                     rgba(0, 0, 0, 0.07));
+
+}
+
+.button-white{
   font: inherit;
   text-align: center;
   vertical-align: middle;
   text-transform: none;
   border: none;
   border-radius: 25px;
-  background-color:#ffffff;
-  opacity: 0.2;
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.button-white:hover{
+  background-color: #ffffff;
+}
+.button-white:active{
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
 }
 
 /*основная навигация*/
@@ -80,21 +96,17 @@ a {
   text-align: right;
 }
 
-.seach-button.button-white{
+.button-white.search-button {
   width: 33px;
   height: 33px;
-  object-fit: contain;
-
 }
-.login-button.button-white{
+.button-white.entrance{
   width: 93px;
   height: 32px;
 }
 .basket-button.button-white{
   width: 100px;
- height: 33px;
- opacity: 0.2;
- background-color: #ffffff;
+  height: 33px;
 }
 
 .site-navigation a,
@@ -110,24 +122,18 @@ a {
   font-size: 14px;
   line-height: 16px;
 }
-.button-white.entrance{
-  width: 93px;
- height: 32px;
- opacity: 0.2;
- background-color: #ffffff;
-}
+
 .login-form-button{
   width: 100px;
- height: 44px;
- box-shadow: 0px 1px 2px 0 #ac1000;
- background-image: linear-gradient(to top, #e74a35, #f26843);
-
- font-family: Roboto;
+  height: 44px;
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: center;
   color: #fefefe;
@@ -138,7 +144,7 @@ a {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: left;
   color: #999999;
@@ -149,7 +155,7 @@ a {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.85;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: left;
   color: #323232;
@@ -159,7 +165,7 @@ a {
     font: inherit;
   }
 
-.working-time p{
+ .working-time p{
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -170,7 +176,7 @@ a {
   color: #ffffff;
 }
 
-.phone-number{
+ .phone-number{
   font-size: 22px;
   font-weight: bold;
   font-style: normal;
@@ -179,6 +185,9 @@ a {
   letter-spacing: normal;
   text-align: right;
   color: #ffffff;
+}
+.catalog-list{
+  list-style:none;
 }
 
 
@@ -200,7 +209,6 @@ a {
   height: 881px;
   background-position: top center;
   background-repeat: no-repeat;
-  /*на макете 2 фото совмещены, но скачалась одна общая фотография*/
 }
 .gallery.button{
     width: 280px;
@@ -215,8 +223,10 @@ a {
     text-align: center;
     color: #ffffff;
 }
-
-
+.list-catalog li,
+.hit-items-list li{
+  list-style:none;
+}
 
 /*специальное предложение*/
 .raspberry{
@@ -272,7 +282,6 @@ a {
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
   text-decoration: none;
-  opacity: 0.99;
 }
 
 .button-chocolate{
@@ -283,7 +292,6 @@ a {
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
   text-decoration: none;
-  opacity: 0.99;
 }
 /*не понимаю, одна ссылка такая маленькая делается, вторая большая..
 Хотя свойства почти одинаковые...*/
@@ -292,10 +300,6 @@ a {
 /*хиты*/
 
 
-}
-.hit-items li{
-  list-style:none;
-}
 
 .hit-items-names a{
   list-style: none;
@@ -312,14 +316,14 @@ a {
 
 }
 
- .hit-items-names{
+ .hit-items-price{
    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   font-family: Roboto;
   font-size: 45px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1;
+  line-height: 45px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -360,6 +364,9 @@ a {
   text-align: left;
   color: #323232;
 }
+.features-list li{
+  list-style: none;
+}
 
 /*новое в нашем блоге статья*/
 article{
@@ -374,7 +381,7 @@ article{
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  line-height: 22;
+  line-height: 22px;
   letter-spacing: normal;
   text-align: left;
   color: #323232;
@@ -420,7 +427,7 @@ article{
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
+  line-height: 24px;
   letter-spacing: normal;
   text-align: left;
   color: #fefefe;
@@ -498,7 +505,7 @@ article{
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.38;
+  line-height: 18px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -509,10 +516,13 @@ article{
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+  line-height: 18px;
   letter-spacing: normal;
   text-align: left;
   color: #fefefe;
+}
+.information li{
+  list-style: none;
 }
 
 /*catalog*/
@@ -522,7 +532,7 @@ article{
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.17;
+  line-height: 41px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -533,7 +543,7 @@ article{
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -544,7 +554,7 @@ article{
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.13;
+  line-height: 18px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
@@ -554,4 +564,10 @@ article{
   height: 37px;
   border: solid 2px #ffffff;
   background-color: #ffffff;
+}
+
+.breadcrumbs li,
+.fat-option li,
+.filler-list li{
+  list-style: none;
 }
