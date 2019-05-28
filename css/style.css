@@ -26,13 +26,12 @@ a {
   margin: -1px;
 }
 /*пока выключаю всплывающие формы*/
-.catalog-list,
-.seach-form,
-.login-form{
+.temporally-hidden{
   display:none;
 }
 
 .button {
+  display:block;
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -57,6 +56,7 @@ a {
 }
 
 .button-white{
+  display:block;
   font: inherit;
   text-align: center;
   vertical-align: middle;
@@ -99,12 +99,14 @@ a {
 .button-white.search-button {
   width: 33px;
   height: 33px;
+
 }
 .button-white.entrance{
   width: 93px;
   height: 32px;
+  text-align: right;
 }
-.basket-button.button-white{
+.button-white.busket-button{
   width: 100px;
   height: 33px;
 }
